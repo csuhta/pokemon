@@ -1,0 +1,14 @@
+// Returns an rgba() declaration flattening the given color, removing all transparency.
+@function flatten($color) {
+  @return rgba(red($color), green($color), blue($color), 1.0);
+}
+
+// Returns an rgba() declaration for the given `opacity` of pure black
+@function black($opacity) {
+  @return rgba(0,0,0,$opacity);
+}
+
+// Returns an rgba() declaration for the given `opacity` of pure white
+@function white($opacity) {
+  @return rgba(255,255,255,$opacity);
+}

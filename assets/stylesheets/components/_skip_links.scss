@@ -1,0 +1,35 @@
+// -------------------------------------------------------------------------
+// Skip Links
+//
+// Links should be visible on focus when tabbing
+// http://webaim.org/techniques/css/invisiblecontent/#skipnavlinks
+// http://www.456bereastreet.com/archive/200909/skip_links_need_to_be_at_least_temporarily_visible/
+//
+// Example markup:
+//
+//<div class="skip-links">
+//  <ul>
+//    <li><a href="#nav">Skip to Navigation</a></li>
+//    <li><a href="#main">Skip to Main Content</a></li>
+//    <li><a href="#footer">Skip to Footer</a></li>
+//  </ul>
+//</div>
+//
+// TODO: Add JS to apply tabindex="-1" and focus target on click
+//       http://stackoverflow.com/a/19859641/673457
+// -------------------------------------------------------------------------
+
+.skip-links {
+  a {
+    font-size: 16px;
+    position: absolute;
+    line-height: 1.4;
+    right: 20px;
+    top: -200px; // Must be larger than the element's height
+    z-index: -1;
+    &:focus {
+      top: 2px;
+      z-index: 9999;
+    }
+  }
+}

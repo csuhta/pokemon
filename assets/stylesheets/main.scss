@@ -1,0 +1,12 @@
+@import "functions/*";
+@import "mixins/*";
+
+@import "settings/colors";
+@import "settings/fonts";
+@import "settings/breakpoints";
+
+@import "root/reset";
+@import "root/root";
+@import "root/inner_flex";
+
+@import "components/**/*";

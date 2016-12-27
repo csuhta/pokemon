@@ -1,0 +1,54 @@
+form {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  max-width: 400px;
+}
+
+label {
+  color: $cWhite;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 0 0 7px 0;
+  padding: 0 0 0 22px;
+  height: 16px;
+  line-height: 16px;
+  background-size: 16px 16px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  &[for="pokedex"] {background-image: url("/assets/pokedex.png")}
+  &[for="attackdex"] {background-image: url("/assets/attackdex.png")}
+  &[for="bulbapedia"] {background-image: url("/assets/bulbapedia.png")}
+  &[for="itemdex"] {background-image: url("/assets/itemdex.png")}
+  &[for="smogon"] {background-image: url("/assets/smogon.png")}
+}
+
+input {
+  display: block;
+  text-align: left;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  background-color: $cLightGrey;
+  padding: 8px 32px 8px 7px;
+  box-shadow: 0px 1px 1px #000;
+  font-size: 19px;
+  margin: 0 0 17px 0;
+  background-image: url("/assets/search.svg");
+  background-position: center right 7px;
+  background-size: 16px 16px;
+  &:focus, &:active {
+    background-color: #fff;
+  }
+}
+
+button {
+  @include visuallyhidden;
+}
+
+.footer {
+  font-size: 12px;
+  color: white(0.4);
+  border-bottom: 1px dotted white(0.4);
+}

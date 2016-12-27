@@ -1,0 +1,23 @@
+html {
+  background: #2C2D44;
+}
+
+body {
+  color: $cWhite;
+  font-size: 16px;
+  font-family: $fSystem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  padding: 0 5% 0 5%;
+}
+
+select, button, option,
+input[type=checkbox], input[type=radio] {
+  &:focus {
+    outline: none !important;
+  }
+}
