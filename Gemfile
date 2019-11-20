@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby "2.3.3"
+ruby "2.6.5"
 
 gem "activesupport", "~> 5.0.1"
 gem "brochure", "~> 0.5.4"
