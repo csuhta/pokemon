@@ -22,10 +22,10 @@ label {
   background-position: left center;
   background-repeat: no-repeat;
   width: 100%;
-  &[for="serebii"] {background-image: url("/assets/serebii.png")}
-  &[for="bulbapedia"] {background-image: url("/assets/bulbapedia.png")}
-  &[for="smogon"] {background-image: url("/assets/smogon.svg")}
-  &[for="internet"] {background-image: url("/assets/google.png")}
+  &[for="serebii"] {background-image: url("/assets/serebii.png?v2")}
+  &[for="bulbapedia"] {background-image: url("/assets/bulbapedia.png?v2")}
+  &[for="smogon"] {background-image: url("/assets/smogon.svg?v2")}
+  &[for="internet"] {background-image: url("/assets/google.png?v2")}
 }
 
 input {
