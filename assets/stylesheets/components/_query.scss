@@ -1,29 +1,31 @@
 form {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 400px;
+  padding: 0 2.5%;
 }
 
 label {
-  color: $cWhite;
+  color: white(0.75);
   font-size: 14px;
   display: flex;
   align-items: center;
   text-align: left;
   margin: 0 0 7px 0;
-  padding: 0 0 0 22px;
-  height: 16px;
+  padding: 0 0 0 21px;
+  height: 21px;
   line-height: 16px;
-  background-size: 16px 16px;
+  background-size: auto 16px;
   background-position: left center;
   background-repeat: no-repeat;
-  &[for="pokedex"] {background-image: url("/assets/pokedex.png")}
-  &[for="attackdex"] {background-image: url("/assets/attackdex.png")}
+  width: 100%;
+  &[for="serebii"] {background-image: url("/assets/serebii.png")}
   &[for="bulbapedia"] {background-image: url("/assets/bulbapedia.png")}
-  &[for="itemdex"] {background-image: url("/assets/itemdex.png")}
-  &[for="smogon"] {background-image: url("/assets/smogon.png")}
-  &[for="internet"] {background-image: url("/assets/internet.png")}
+  &[for="smogon"] {background-image: url("/assets/smogon.svg")}
+  &[for="internet"] {background-image: url("/assets/google.png")}
 }
 
 input {
@@ -32,13 +34,14 @@ input {
   border: 1px solid #fff;
   border-radius: 2px;
   background-color: $cLightGrey;
-  padding: 8px 32px 8px 7px;
+  padding: 8px 32px 8px 9px;
   box-shadow: 0px 1px 1px black(0.5);
   font-size: 19px;
   margin: 0 0 17px 0;
+  width: 100%;
   background-image: url("/assets/search.svg");
-  background-position: center right 7px;
-  background-size: 16px 16px;
+  background-position: center right 9px;
+  background-size: 18px 18px;
   &:focus, &:active {
     background-color: #fff;
   }
@@ -46,10 +49,4 @@ input {
 
 button {
   @include visuallyhidden;
-}
-
-.footer {
-  font-size: 12px;
-  color: white(0.4);
-  border-bottom: 1px dotted white(0.4);
 }
