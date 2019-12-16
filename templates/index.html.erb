@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <title>Pokémon Sword/Shield Search</title>
 
-    <link rel="stylesheet" href="/assets/main.css?v2" type="text/css" media="screen">
+    <% fp = "v" + ENV.fetch("HEROKU_SLUG_COMMIT", "2") %>
+
+    <link rel="stylesheet" href="/assets/main.css?<%=fp%>" type="text/css" media="screen">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="canonical" href="https://pokemon.csuhta.com">
@@ -14,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <meta name="apple-mobile-web-app-title" content="Pokémon">
-    <link rel="apple-touch-icon" href="/app-icon.png?v2">
-    <link rel="icon" sizes="196x196" href="/app-icon.png?v2">
+    <link rel="apple-touch-icon" href="/app-icon.png?<%=fp%>">
+    <link rel="icon" sizes="196x196" href="/app-icon.png?<%=fp%>">
 
   </head>
   <body>
@@ -69,7 +71,7 @@
       <button type="submit">Search</button>
     </form>
 
-    <script type="text/javascript" src="/assets/main.js?v2"></script>
+    <script type="text/javascript" src="/assets/main.js?<%=fp%>"></script>
 
   </body>
 </html>

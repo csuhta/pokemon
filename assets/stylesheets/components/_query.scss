@@ -5,18 +5,18 @@ form {
   justify-content: center;
   width: 100%;
   max-width: 400px;
-  padding: 0 2.5%;
+  padding: 0 4%;
 }
 
 label {
   color: white(0.75);
-  font-size: 14px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   text-align: left;
   margin: 0 0 7px 0;
   padding: 0 0 0 21px;
-  height: 21px;
+  height: 22px;
   line-height: 16px;
   background-size: auto 16px;
   background-position: left center;
@@ -32,11 +32,12 @@ input {
   display: block;
   text-align: left;
   border: 1px solid #fff;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: $cLightGrey;
-  padding: 8px 32px 8px 9px;
+  padding: 9px 32px 9px 8px;
   box-shadow: 0px 1px 1px black(0.5);
-  font-size: 19px;
+  font-size: 20px;
+  line-height: 24px;
   margin: 0 0 17px 0;
   width: 100%;
   background-image: url("/assets/search-v2.svg");
